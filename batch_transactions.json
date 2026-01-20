@@ -1,0 +1,49 @@
+{
+    "clients": [
+      {
+        "age": 35,
+        "job": "admin.",
+        "marital": "married",
+        "education": "tertiary",
+        "default": "no",
+        "housing": "yes",
+        "loan": "no",
+        "contact": "cellular",
+        "month": "may",
+        "day_of_week": "mon",
+        "duration": 180,
+        "campaign": 2,
+        "pdays": -1,
+        "previous": 0,
+        "poutcome": "unknown",
+        "emp.var.rate": 1.1,
+        "cons.price.idx": 93.994,
+        "cons.conf.idx": -36.4,
+        "euribor3m": 4.857,
+        "nr.employed": 5191
+      },
+      {
+        "age": 50,
+        "job": "technician",
+        "marital": "divorced",
+        "education": "secondary",
+        "default": "no",
+        "housing": "no",
+        "loan": "yes",
+        "contact": "telephone",
+        "month": "jul",
+        "day_of_week": "fri",
+        "duration": 90,
+        "campaign": 4,
+        "pdays": 10,
+        "previous": 1,
+        "poutcome": "failure",
+        "emp.var.rate": -0.1,
+        "cons.price.idx": 92.893,
+        "cons.conf.idx": -46.2,
+        "euribor3m": 1.345,
+        "nr.employed": 5099
+      }
+    ]
+  }
+  

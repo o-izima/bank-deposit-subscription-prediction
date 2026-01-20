@@ -1,0 +1,23 @@
+{
+    "age": 35,
+    "job": "admin.",
+    "marital": "married",
+    "education": "tertiary",
+    "default": "no",
+    "housing": "yes",
+    "loan": "no",
+    "contact": "cellular",
+    "month": "may",
+    "day_of_week": "mon",
+    "duration": 180,
+    "campaign": 2,
+    "pdays": -1,
+    "previous": 0,
+    "poutcome": "unknown",
+    "emp.var.rate": 1.1,
+    "cons.price.idx": 93.994,
+    "cons.conf.idx": -36.4,
+    "euribor3m": 4.857,
+    "nr.employed": 5191
+  }
+  
