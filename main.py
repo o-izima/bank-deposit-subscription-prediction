@@ -55,6 +55,11 @@ class BatchClients(BaseModel):
 # -----------------------------
 # Routes
 # -----------------------------
+
+@app.get("/")
+def root():
+    return {"message": "Bank Marketing Subscription Prediction API is live!"}
+    
 @app.get("/health")
 def health():
     return {"status": "ok", "model": MODEL_NAME}
