@@ -54,7 +54,8 @@ The project covers the **full ML workflow** — from EDA and preprocessing to mo
 │   ├── 03_Baseline_Models.ipynb     # Baseline models (LogReg, etc.)
 │   ├── 04_Tree_Models.ipynb         # RandomForest & XGBoost
 │   ├── 05_Deep_and_Anomaly.ipynb    # MLP & anomaly detection models
-│   ├── 06_Model_Evaluation.ipynb    # Final model selection
+│   ├── 06_Model_Evaluation.ipynb    # Final model selection & tuning
+│   └── 06_Model_Evaluation.py       # Final model selection & tuning
 ├── main.py                          # FastAPI application (can be generated automatically)
 ├── artifacts/
 │   ├── preprocessor.pkl              # Preprocessing pipeline
@@ -63,6 +64,7 @@ The project covers the **full ML workflow** — from EDA and preprocessing to mo
 │   └── best_model.pkl                # Final deployed model
 ├── test_api.py                       # Local Test API predictions
 ├── cloud_test_api.py                 # Cloud (Render) Test API predictions
+├── api_test.py                       # Automated Test API predictions for both cloud & local
 └── sample_requests/
     ├── client.json                   # Single client input
     └── batch_clients.json            # Batch input
