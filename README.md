@@ -237,7 +237,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
+Ensure `models/` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
 
 ---
 
