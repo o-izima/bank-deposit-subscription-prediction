@@ -234,9 +234,7 @@ cd bank-deposit-subscription-prediction
 ```
 
 Install dependencies:
-```text
-pip install -r requirements.txt
-```
+
 
 Ensure models/ contains best_model.pkl
 ---
