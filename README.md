@@ -230,7 +230,7 @@ pip install -r requirements.txt
 Clone the repository:
 ```text
 git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git`
-`cd bank-deposit-subscription-prediction
+cd bank-deposit-subscription-prediction
 ```
 
 Install dependencies:
@@ -238,5 +238,5 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ensure `models/` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
+Ensure `test_api.py` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
 ---
