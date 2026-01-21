@@ -94,7 +94,7 @@ Predict whether a client will subscribe to a bank deposit using machine learning
 ## Dataset
 ### Source
 
-Kaggle: [Credit Card Fraud Detection Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)
+Kaggle: [Bank Marketing Campaign Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)
 
 ### Description
 - 45,211 client records with demographic, economic, and campaign features.
@@ -147,3 +147,31 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://archive.ics.uci.edu/datase
 ### Deployment Choice
 - XGBoost selected and deployed as production model.
 ---
+## Model Evaluation
+
+Metrics used (focus on subscription detection):
+- PR-AUC (Precision–Recall AUC) – Primary metric
+- ROC-AUC – Secondary metric
+- F1 Score, Precision, Recall – for interpretability
+- Thresholds adjustable depending on campaign priorities
+
+
+## 📊 Model Metrics Comparison
+
+| Model              | roc_auc | pr_auc  | f1      | precision | recall  | threshold |
+|------------------- |--------:|--------:|--------:|----------:|--------:|----------:|
+| logreg             | 0.9235  | 0.5606  | 0.5931  | 0.4537    | 0.8562  | 0.5000    |
+| random_forest      | 0.9310 ✅ | 0.6066 ✅ | 0.5746  | 0.5807    | 0.5687  | 0.5000    |
+| xgboost            | 0.9334 ✅ | 0.6033  | 0.5844 ✅ | 0.5954 ✅ | 0.5738  | 0.5000    |
+| mlp                | 0.9078  | 0.5308  | 0.3995  | 0.2503    | 0.9883 ✅ | 0.0000    |
+| isolation_forest   | 0.5929  | 0.1883  | 0.2471  | 0.1549    | 0.6114  | -0.0447   |
+| one_class_svm      | 0.5904  | 0.1746  | 0.2513  | 0.1575    | 0.6218  | -26.2506  |
+| autoencoder        | 0.6289  | 0.2093  | 0.2686  | 0.1683    | 0.6645  | 0.0050    |
+
+**Legend:**  
+- ✅ Best value per metric  
+- `roc_auc` = Area under the ROC curve  
+- `pr_auc` = Area under the Precision-Recall curve  
+- `f1` = F1-score  
+- `precision`, `recall` = standard classification metrics  
+- `threshold` = probability threshold used for prediction
