@@ -227,16 +227,7 @@ pip install -r requirements.txt
 
 ## Setup & Installation
 
-Clone the repository:
-```text
-git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git
-cd bank-deposit-subscription-prediction
-```
 
-Install dependencies:
-```text
-pip install -r requirements.txt
-```
 
 Ensure your models/ folder contains the trained model (generated from the notebook).
 ---
