@@ -238,6 +238,7 @@ pip install -r requirements.txt
 ```
 
 Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
+
 ---
 
 ## Running the API Locally
@@ -262,6 +263,7 @@ Example files:
 - `batch_clients.json` – batch of clients
 
 The script prints predicted subscription probabilities.
+
 ---
 ## Docker
 Build the Docker image:
@@ -272,3 +274,4 @@ Run the Docker container locally:
 ```text
 docker run -p 8000:8000 bank-api
 ```
+---
