@@ -275,3 +275,6 @@ Run the Docker container locally:
 docker run -p 8000:8000 bank-api
 ```
 ---
+
+## Cloud Deployment with Render
+URL: [Bank Marketing Subscription Prediction API](https://bank-deposit-subscription-api.onrender.com)
