@@ -111,3 +111,17 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://archive.ics.uci.edu/datase
 - Can apply various models: RandomForest, XGBoost, Logistic Regression, MLP.
 
 ---
+
+## Data Preparation
+### Exploratory Data Analysis (EDA)
+- Examine class balance.
+- Visualize categorical and numerical distributions.
+- Inspect correlations between features and target.
+### Preprocessing
+- Encode categorical features (Label, OneHot, CatBoost).
+- Scale numerical features.
+- Handle class imbalance with SMOTE or class weights.
+- Split dataset into train / validation / test (60/20/20).
+- Save splits and preprocessor pipeline for reproducibility.
+
+---
