@@ -156,7 +156,7 @@ Metrics used (focus on subscription detection):
 - Thresholds adjustable depending on campaign priorities
 
 
-## 📊 Model Metrics Comparison - After Training
+## 📊 Model Metrics Comparison
 
 | Model              | roc_auc | pr_auc  | f1      | precision | recall  | threshold |
 |------------------- |--------:|--------:|--------:|----------:|--------:|----------:|
@@ -176,9 +176,9 @@ Metrics used (focus on subscription detection):
 - `precision`, `recall` = standard classification metrics  
 - `threshold` = probability threshold used for prediction
 
-### ✅ Final Best Model After Optuna Hyperparameter Tuning
+### Final Best Model After Optuna Hyperparameter Tuning
 
-### Model: XGBoost
+#### Model: XGBoost
 
 **Metrics on Test Data:**
 
