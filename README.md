@@ -67,3 +67,31 @@ The project covers the **full ML workflow** — from EDA and preprocessing to mo
 └── sample_requests/
     ├── client.json                   # Single client input
     └── batch_clients.json            # Batch input
+---
+
+## Business Objective
+### Problem Statement
+
+Financial institutions need to identify which clients are likely to subscribe to a bank deposit to improve campaign efficiency and reduce marketing costs.
+
+Goal
+
+Predict whether a client will subscribe to a bank deposit using machine learning.
+
+The model outputs a probability between 0 and 1 representing subscription likelihood.
+
+Default threshold = 0.5:
+
+proba >= 0.5 → predicted subscriber
+
+proba < 0.5 → predicted non-subscriber
+
+⚠️ For imbalanced datasets (~11% subscribed), thresholds can be adjusted (e.g., 0.3) to increase recall.
+
+Impact
+
+Focus marketing efforts on clients likely to subscribe.
+
+Reduce cost of outreach.
+
+Improve campaign ROI.
