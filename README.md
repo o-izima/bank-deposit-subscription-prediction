@@ -17,7 +17,6 @@ This machine learning project predicts whether a client will subscribe to a bank
 - [Metrics Comparison](#metrics-comparison)  
 - [Deployment Workflow](#deployment-workflow)  
 - [Requirements](#requirements)  
-- [Technologies](#technologies)  
 - [Setup & Installation](#setup--installation)  
 - [Running the API](#running-the-api)  
 - [Testing the API](#testing-the-api)  
@@ -195,3 +194,46 @@ Metrics used (focus on subscription detection):
 - ✅ Indicates the best performance compared to previous models.  
 - Threshold = probability cutoff used for binary classification.  
 - Metrics were obtained on the held-out test dataset after hyperparameter tuning with Optuna.
+--- 
+
+## Deployment Workflow
+### Model Serialization
+- Preprocessor and final model saved using joblib.
+- Model metadata stored in artifacts/best_model.json.
+
+### API Development
+- FastAPI service with endpoints:
+    - POST /predict → single client prediction
+    - POST /predict_batch → batch predictions
+
+### Containerization
+- Docker image created with all dependencies.
+- Image runs FastAPI for real-time predictions.
+
+### Execution
+- Local or cloud deployment via Docker.
+
+---
+
+## Requirements
+- Python 3.10+
+- Pip / Conda
+
+Install dependencies:
+`pip install -r requirements.txt`
+---
+
+## Setup & Installation
+
+Clone the repository:
+
+`git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git`
+`cd bank-deposit-subscription-prediction`
+
+
+Install dependencies:
+
+`pip install -r requirements.txt`
+
+Ensure `models/` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
+---
