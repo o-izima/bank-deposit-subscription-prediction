@@ -155,7 +155,7 @@ Metrics used (focus on subscription detection):
 - Thresholds adjustable depending on campaign priorities
 
 
-## 📊 Model Metrics Comparison
+## Metrics Comparison
 
 | Model              | roc_auc | pr_auc  | f1      | precision | recall  | threshold |
 |------------------- |--------:|--------:|--------:|----------:|--------:|----------:|
@@ -238,5 +238,5 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ensure `test_api.py` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
+Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
 ---
