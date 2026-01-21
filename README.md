@@ -125,3 +125,25 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://archive.ics.uci.edu/datase
 - Save splits and preprocessor pipeline for reproducibility.
 
 ---
+
+## Modeling Approach
+### Models Trained
+1. Logistic Regression (LR)
+2. Support Vector Machine (SVM)
+3. Random Forest (RF)
+4. XGBoost
+5. Multi-Layer Perceptron (MLP)
+6. IsolationForest / One-Class SVM / Autoencoder (anomaly detection)
+### Model Selection
+- Evaluated all models using PR-AUC as primary metric.
+    - Focuses on positive class performance.
+    - Ideal when the dataset is imbalanced, i.e., the number of positive cases (subscribers/fraud) is much smaller than negative cases.
+    - Measures how well the model balances precision and recall across thresholds.
+    - Why it’s ideal here: In the bank marketing dataset or fraud detection, only a small fraction subscribe, so PR AUC gives a more realistic view of performance than accuracy.
+
+- Top 2 models tuned with Optuna.
+- Final model automatically selected based on PR-AUC on test set.
+
+### Deployment Choice
+- XGBoost selected and deployed as production model.
+---
