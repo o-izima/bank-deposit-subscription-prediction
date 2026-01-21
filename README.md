@@ -219,21 +219,24 @@ Metrics used (focus on subscription detection):
 - Python 3.10+
 - Pip / Conda
 
-Install dependencies:
-`pip install -r requirements.txt`
+Install dependencies
+```text
+pip install -r requirements.txt
+```
 ---
 
 ## Setup & Installation
 
 Clone the repository:
-
-`git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git`
-`cd bank-deposit-subscription-prediction`
-
+```text
+git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git`
+`cd bank-deposit-subscription-prediction
+```
 
 Install dependencies:
-
-`pip install -r requirements.txt`
+```text
+pip install -r requirements.txt
+```
 
 Ensure `models/` contains `best_model.pkl` and `artifacts/` contains `preprocessor.pkl` and `best_model.json`.
 ---
