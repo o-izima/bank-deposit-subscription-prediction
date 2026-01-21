@@ -238,7 +238,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ensure models/ contains best_model.pkl
+Ensure your models/ folder contains the trained model (generated from the notebook).
 ---
 
 ## Running the API Locally
