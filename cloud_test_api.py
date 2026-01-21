@@ -17,7 +17,7 @@ except Exception as e:
 # 2️⃣ Test single transaction
 # -----------------------------
 try:
-    with open("transaction.json", "r") as f:
+    with open("client.json", "r") as f:
         transaction_data = json.load(f)
 
     response = requests.post(f"{BASE_URL}/predict", json=transaction_data)
@@ -30,7 +30,7 @@ except Exception as e:
 # 3️⃣ Test batch transactions
 # -----------------------------
 try:
-    with open("batch_transactions.json", "r") as f:
+    with open("batch_clients.json", "r") as f:
         batch_data = json.load(f)
 
     response = requests.post(f"{BASE_URL}/predict_batch", json=batch_data)

@@ -12,7 +12,7 @@ print("Health check:", health.json())
 # -----------------------------
 # Single prediction
 # -----------------------------
-with open("transaction.json", "r") as f:
+with open("client.json", "r") as f:
     transaction_data = json.load(f)
 
 response = requests.post(
@@ -26,7 +26,7 @@ print(response.json())
 # -----------------------------
 # Batch prediction
 # -----------------------------
-with open("batch_transactions.json", "r") as f:
+with open("batch_clients.json", "r") as f:
     batch_data = json.load(f)
 
 response = requests.post(
