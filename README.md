@@ -262,3 +262,13 @@ Example files:
 - `batch_clients.json` – batch of clients
 
 The script prints predicted subscription probabilities.
+---
+## Docker
+Build the Docker image:
+```text
+docker build -t bank-api .
+```
+Run the Docker container locally:
+```text
+docker run -p 8000:8000 bank-api
+```
