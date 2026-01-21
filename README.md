@@ -268,7 +268,7 @@ Example files:
 The script prints predicted subscription probabilities.
 
 ### Usage
-#### Local Testing 
+#### Local Testing (ensure docker is runnning)
 ```text
 export API_ENV=local
 python api_test.py
@@ -299,13 +299,21 @@ Model Used: xgboost
 ## Docker
 Build the Docker image:
 ```text
-docker build -t bank-api .
+docker build -t bank-marketing-api .
 ```
 Run the Docker container locally:
 ```text
-docker run -p 8000:8000 bank-api
+docker run -p 8000:8000 bank-marketing-api
 ```
 ---
 
 ## Render Deployment
 Render Cloud URL: [Bank Marketing Subscription Prediction API](https://bank-deposit-subscription-api.onrender.com)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for details.
+
+[⬆ Go to Top](#top)
