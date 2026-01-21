@@ -238,14 +238,12 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
+Ensure models/ contains best_model.pkl
 ---
 
 ## Running the API Locally
 
-Start the FastAPI app:
-
-`python main.py`
+Start the FastAPI app: `python main.py`
 
 The API will run at:
 `http://localhost:8000`
