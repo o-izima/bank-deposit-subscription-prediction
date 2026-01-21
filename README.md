@@ -14,7 +14,7 @@ This machine learning project predicts whether a client will subscribe to a bank
 - [Data Preparation](#data-preparation)  
 - [Modeling Approach](#modeling-approach)  
 - [Model Evaluation](#model-evaluation)  
-- [Metrics Table](#metrics-table)  
+- [Model Metrics Comparison](#model-metrics-comparison)  
 - [Deployment Workflow](#deployment-workflow)  
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
@@ -156,12 +156,12 @@ Metrics used (focus on subscription detection):
 - Thresholds adjustable depending on campaign priorities
 
 
-## 📊 Model Metrics Comparison
+## 📊 Model Metrics Comparison - After Training
 
 | Model              | roc_auc | pr_auc  | f1      | precision | recall  | threshold |
 |------------------- |--------:|--------:|--------:|----------:|--------:|----------:|
 | logreg             | 0.9235  | 0.5606  | 0.5931  | 0.4537    | 0.8562  | 0.5000    |
-| random_forest      | 0.9310 ✅ | 0.6066 ✅ | 0.5746  | 0.5807    | 0.5687  | 0.5000    |
+| random_forest      | 0.9310  | 0.6066 ✅ | 0.5746  | 0.5807    | 0.5687  | 0.5000    |
 | xgboost            | 0.9334 ✅ | 0.6033  | 0.5844 ✅ | 0.5954 ✅ | 0.5738  | 0.5000    |
 | mlp                | 0.9078  | 0.5308  | 0.3995  | 0.2503    | 0.9883 ✅ | 0.0000    |
 | isolation_forest   | 0.5929  | 0.1883  | 0.2471  | 0.1549    | 0.6114  | -0.0447   |
@@ -175,3 +175,23 @@ Metrics used (focus on subscription detection):
 - `f1` = F1-score  
 - `precision`, `recall` = standard classification metrics  
 - `threshold` = probability threshold used for prediction
+
+### ✅ Final Best Model After Optuna Hyperparameter Tuning
+
+### Model: XGBoost
+
+**Metrics on Test Data:**
+
+| Metric      | Value  |
+|------------ |-------:|
+| roc_auc     | 0.9379 ✅ |
+| pr_auc      | 0.6347 ✅ |
+| f1          | 0.6317 ✅ |
+| precision   | 0.5742  |
+| recall      | 0.7021  |
+| threshold   | 0.5000  |
+
+**Notes:**  
+- ✅ Indicates the best performance compared to previous models.  
+- Threshold = probability cutoff used for binary classification.  
+- Metrics were obtained on the held-out test dataset after hyperparameter tuning with Optuna.
