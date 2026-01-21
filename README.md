@@ -90,3 +90,24 @@ Predict whether a client will subscribe to a bank deposit using machine learning
 - Reduce cost of outreach.
 - Improve campaign ROI.
 ---
+
+## Dataset
+### Source
+
+Kaggle: [Credit Card Fraud Detection Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)
+
+### Description
+- 45,211 client records with demographic, economic, and campaign features.
+- Target: y → 1 = subscribed, 0 = not subscribed.
+- Features include:
+    - `age, job, marital, education`
+    - `default, housing, loan`
+    - `contact, month, day_of_week, duration`
+    - `campaign, pdays, previous, poutcome`
+
+### Why this dataset works
+- Public and structured for supervised learning.
+- Slight class imbalance (~11% subscribed), suitable for PR-AUC evaluation.
+- Can apply various models: RandomForest, XGBoost, Logistic Regression, MLP.
+
+---
