@@ -229,12 +229,14 @@ pip install -r requirements.txt
 
 Clone the repository:
 ```text
-git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git`
+git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git
 cd bank-deposit-subscription-prediction
 ```
 
 Install dependencies:
-
+```text
+pip install -r requirements.txt
+```
 
 Ensure models/ contains best_model.pkl
 ---
