@@ -14,7 +14,7 @@ This machine learning project predicts whether a client will subscribe to a bank
 - [Data Preparation](#data-preparation)  
 - [Modeling Approach](#modeling-approach)  
 - [Model Evaluation](#model-evaluation)  
-- [Model Metrics Comparison](#model-metrics-comparison)  
+- [Metrics Comparison](#metrics-comparison)  
 - [Deployment Workflow](#deployment-workflow)  
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
