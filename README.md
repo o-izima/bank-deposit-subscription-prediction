@@ -226,10 +226,18 @@ pip install -r requirements.txt
 ---
 
 ## Setup & Installation
+Clone the repository:
+```text
+git clone https://github.com/o-izima/bank-deposit-subscription-prediction.git
+cd bank-deposit-subscription-prediction
+```
 
+Install dependencies:
+```text
+pip install -r requirements.txt
+```
 
-
-Ensure your models/ folder contains the trained model (generated from the notebook).
+Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
 ---
 
 ## Running the API Locally
@@ -243,3 +251,14 @@ The API will run at:
 - POST /predict → predict subscription for single client
 - POST /predict_batch → batch predictions
 - GET / → health check
+
+## Testing the API
+Use `test_api.py` with sample JSON files:
+
+`python test_api.py`
+
+Example files:
+- `client.json` – single client
+- `batch_clients.json` – batch of clients
+
+The script prints predicted subscription probabilities.
