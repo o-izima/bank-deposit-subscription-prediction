@@ -240,3 +240,17 @@ pip install -r requirements.txt
 
 Ensure models/ contains best_model.pkl and artifacts/ contains preprocessor.pkl and best_model.json.
 ---
+
+## Running the API Locally
+
+Start the FastAPI app:
+
+`python main.py`
+
+The API will run at:
+`http://localhost:8000`
+
+### Endpoints:
+- POST /predict → predict subscription for single client
+- POST /predict_batch → batch predictions
+- GET / → health check
