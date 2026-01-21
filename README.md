@@ -254,16 +254,47 @@ The API will run at:
 - GET / → health check
 
 ## Testing the API
-Use `test_api.py` with sample JSON files:
 
-`python test_api.py`
+Use `api_test.py` with sample JSON files.
+- The script `api_test.py` auto-detects the environment so it works for both local and cloud deployments.
+- It uses an environment variable called `API_ENV`.
+- `API_ENV=local` → uses http://localhost:8000
+- `API_ENV=cloud` → uses your Render URL
 
 Example files:
-- `client.json` – single client
-- `batch_clients.json` – batch of clients
+- `sample_requests/client.json` – single client
+- `sample_requests/batch_clients.json` – batch of clients
 
 The script prints predicted subscription probabilities.
 
+### Usage
+#### Local Testing 
+```text
+export API_ENV=local
+python api_test.py
+```
+
+#### Cloud Testing
+```text
+export API_ENV=cloud
+python api_test.py
+```
+
+#### Sample Output
+```text
+Using API URL: https://bank-deposit-subscription-api.onrender.com (Environment: cloud)
+
+--- Single Client Prediction ---
+{'model': 'xgboost', 'probability': 0.0162, 'prediction': 0}
+Predicted Class: 0
+Subscription Probability: 0.0162
+
+--- Batch Predictions ---
+Model Used: xgboost
+1. Prediction: 0, Probability: 0.0214
+2. Prediction: 1, Probability: 0.6821
+
+```
 ---
 ## Docker
 Build the Docker image:
@@ -276,5 +307,5 @@ docker run -p 8000:8000 bank-api
 ```
 ---
 
-## Cloud Deployment with Render
-URL: [Bank Marketing Subscription Prediction API](https://bank-deposit-subscription-api.onrender.com)
+## Render Deployment
+Render Cloud URL: [Bank Marketing Subscription Prediction API](https://bank-deposit-subscription-api.onrender.com)
